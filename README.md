@@ -2,5 +2,5 @@
 Project for Behavioral Finance
 
 <p float="left" align="left">
-  <img src="/conclusion.png" / width="500">
+  <img src="/conclusion.png" / >
 </p>
