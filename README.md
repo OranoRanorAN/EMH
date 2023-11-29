@@ -1,7 +1,7 @@
 # Research on the Impact of Company Characteristics on Price Differences between Companies Listed In Two Places (A Shares and H Shares)
 Project for Behavioral Finance
 
-## 研究方法
+## Method
 
 Linear Regression：
 - take $\Delta Pirce$ as response variable
