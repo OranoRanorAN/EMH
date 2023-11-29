@@ -1,13 +1,20 @@
-# 探究两地上市企业价格差异以及公司特性对其影响
+# Research on the Impact of Company Characteristics on Price Differences between Companies Listed In Two Places (A Shares and H Shares)
 Project for Behavioral Finance
 
 ## 研究方法
 
-以价格差为因变量进行多元线性回归：
-- 对于部分变量取对数，并去除自相关性较明显和显著性较低的变量；将最终留在模型中的7个变量分为四类，与价格差呈正相关的有估值指标（PE、PB）和交易指标（换手率、交易股数），呈负相关的有规模指标（流通市值）和盈利指标（ROE）
+Linear Regression：
+- take $\Delta Pirce$ as response variable
+- Variable selection:  7 variables remain in the model, and are divided into **four categories**:
+  1. the valuation index (PE PB)
+  2. transaction index (number of shares traded at turnover rate) 
+  3. scale index (current market value)
+  4. profit index （ROE）
 
-以公司为单位进行K-means聚类：
-- 将107家公司的所有变量以月为单位取均值并进行标准化处理；使K-means方法对107家公司进行聚类，通过手肘法选择聚为三类；根据结果可以发现估值低、盈利能力强、交易活跃度低、规模大的公司溢价水平较低，反之则溢价水平较高
+K-means Clustering：
+- All variables of 107 companies were averaged and standardized on a monthly basis.
+- The K-means method was used to cluster 107 companies, which were selected into three categories by elbow method.
+- According to the results, it can be found that the premium level of large companies with low valuation, strong profitability and low trading activity is low, while the premium level is high  
 
 
 
